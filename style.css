@@ -1,0 +1,138 @@
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+html {
+  font-size: 62.5%;
+}
+
+body {
+  width: 100rem;
+  margin: 20rem auto;
+  background-color: hsl(204, 43%, 93%);
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  grid-template-rows: 0.8fr auto;
+  width: 65%;
+  margin: 0 auto;
+
+  box-shadow: 0 0 10px 10px rgba(0, 0, 0, 0.05);
+  border-radius: 9px;
+  font-family: "Karla", sans-serif;
+  overflow: hidden;
+}
+
+.row {
+  grid-column: 1/-1;
+  padding: 4.8rem 3.6rem 4.8rem 3.6rem;
+
+  background-color: #fff;
+}
+
+.row-main-header {
+  color: hsl(179, 62%, 43%);
+  font-size: 2.4rem;
+  margin-bottom: 2.4rem;
+}
+
+.row-header {
+  color: hsl(71, 73%, 54%);
+  font-size: 1.8rem;
+  margin-bottom: 1.6rem;
+}
+
+.row-description {
+  color: hsl(218, 22%, 67%);
+  font-size: 1.6rem;
+  line-height: 1.8;
+}
+
+.col--1 {
+  padding: 4.8rem 3.6rem 4rem 3.6rem;
+
+  background-color: hsl(179, 62%, 43%);
+}
+
+.header-col {
+  font-size: 1.8rem;
+  color: #fff;
+  margin-bottom: 1.8rem;
+}
+
+.price-col--1 {
+  display: flex;
+  align-items: center;
+  gap: 1.2rem;
+  margin-bottom: 1.2rem;
+}
+
+.price {
+  font-size: 3.2rem;
+  color: #fff;
+}
+
+.period {
+  color: hsl(204, 43%, 93%);
+  font-size: 1.4rem;
+}
+
+.description-col--1 {
+  font-size: 1.6rem;
+  color: #fff;
+  margin-bottom: 2.4rem;
+}
+
+.btn {
+  width: 100%;
+  border: none;
+  padding-top: 1.4rem;
+  padding-bottom: 1.4rem;
+  font-size: 1.8rem;
+  font-weight: 700;
+  background-color: hsl(71, 73%, 54%);
+  color: #fff;
+  border-radius: 9px;
+}
+
+.col--2 {
+  padding: 4.8rem 3.6rem 4rem 3.6rem;
+
+  background-color: hsl(179, 61%, 51%);
+}
+
+.list {
+  list-style: none;
+  font-size: 1.4rem;
+  color: #fff;
+}
+
+.list-item {
+  margin-bottom: 0.35rem;
+}
+
+@media (max-width: 30em) {
+  body {
+    width: 100%;
+  }
+  .grid-container {
+    grid-template-columns: 1fr;
+    grid-template-rows: 1fr auto auto;
+    margin: 20rem auto;
+    width: 90%;
+  }
+
+  .row {
+    padding: 3.2rem 2.2rem 3.2rem 2.2rem;
+  }
+  .col--1 {
+    padding: 3.2rem 2.2rem 3.2rem 2.2rem;
+  }
+  .col--2 {
+    padding: 3.2rem 2.2rem 3.2rem 2.2rem;
+  }
+}
